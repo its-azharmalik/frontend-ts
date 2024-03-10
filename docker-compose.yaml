@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  client-react-vite:
+    image: frontend-ts
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    init: true
+    volumes:
+      - type: bind
+        source: ./
+        target: /app/
+      - type: volume
+        target: /app/node_modules 
+    networks:
+      - frontend
+    ports:
+      - 4321:4321
+networks:
+  frontend:
+    driver: bridge
+volumes:
+  node_modules:
