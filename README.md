@@ -48,6 +48,8 @@ nature.
    utility functions or UI components, to augment the functionality of Tailwind
    CSS.
 
+8. Docker Integration: This project includes Docker integration, which enables hot reloading and allows for seamless development and testing in a containerized environment. With Docker, you can easily set up and run the project in a consistent and isolated environment, ensuring that your application behaves consistently across different machines and platforms.
+
 ## Technologies Used
 
 - TypeScript
@@ -58,14 +60,24 @@ nature.
 - Tailwind CSS
 - Shadcn (assuming it's a library/framework)
 - Redux Toolkit
+- Docker
 
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps:
 
-1. Clone the repository
-2. Install dependencies using `npm install`
-3. Run the development server using `npm run dev`
+## Getting Started
+
+Follow these steps to set up and run the project:
+
+- Clone the repository.
+- If not using Docker:
+   - Install dependencies using `npm install`.
+   - Run the development server using `npm run dev`.
+- If using Docker:
+   - Run the development server using `docker-compose up`.
+- Checkout any repo according to your required configuration.
+   - e.g. `git checkout setup-without-docker`
 
 ## Usage
 
@@ -88,6 +100,47 @@ please follow these guidelines:
 - Suggest new features by opening an issue
 - Follow coding standards
 - Submit pull requests with clear descriptions
+
+
+```## Pull Request Template
+
+### Description
+
+[Provide a brief description of the changes made in this PR.]
+
+### Motivation
+
+[Explain the motivation behind these changes and why they are necessary.]
+
+### Changes Made
+
+[List the specific changes made in this PR.]
+
+### Testing
+
+[Describe the testing that has been done to ensure the changes are working as expected.]
+
+### Screenshots
+
+[If applicable, include screenshots or GIFs to visually demonstrate the changes.]
+
+### Checklist
+
+- [ ] I have tested the changes locally.
+- [ ] I have reviewed the code and ensured it follows the coding standards.
+- [ ] I have updated the documentation, if necessary.
+- [ ] I have added appropriate unit tests, if applicable.
+- [ ] I have assigned the PR to the appropriate reviewer(s).
+- [ ] I have resolved any conflicts with the base branch.
+- [ ] I have added labels and milestones, if applicable.
+
+### Related Issues
+
+[Cite any related issues or pull requests.]
+
+### Additional Notes
+
+[Include any additional notes or information that may be relevant.]```
 
 ## Future Enhancements
 
