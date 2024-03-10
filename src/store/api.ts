@@ -5,8 +5,11 @@ import {
 	EntryArrayType,
 	parseThroughSchema,
 } from '@/config/schemas';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
-export const getData = async () => {
+
+// all the data fetching fucntions go here
+const getData = async () => {
 	const response = await get('', api);
 	const parsedData = parseThroughSchema(
 		JSON.parse(response.data),
@@ -14,3 +17,6 @@ export const getData = async () => {
 	);
 	return parsedData as EntryArrayType;
 };
+
+// all the thunk functions go here
+export const getDataThunk = createAsyncThunk('data/getData', getData);

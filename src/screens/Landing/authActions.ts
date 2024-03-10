@@ -1,8 +1,8 @@
-import { getData } from '@/store/api';
+
 
 const authActions = async () => {
-	const data = await getData();
-	return data;
+
+console.log('authActions.ts: authActions() called');
 };
 
 export default authActions;
