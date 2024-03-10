@@ -140,7 +140,9 @@ please follow these guidelines:
 
 ### Additional Notes
 
-[Include any additional notes or information that may be relevant.]```
+[Include any additional notes or information that may be relevant.]
+
+```
 
 ## Future Enhancements
 
